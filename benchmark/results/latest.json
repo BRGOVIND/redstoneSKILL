@@ -1,0 +1,3650 @@
+{
+  "absolute_improvement": 0.2222222222222222,
+  "adaptive": {
+    "average_memories_selected": 1.5972222222222223,
+    "context_tokens": 23.98611111111111,
+    "f1": 0.9702380952380953,
+    "latency_ms": 1.4726569441134214,
+    "memory_efficiency": 0.04169079328314997,
+    "multi_memory_accuracy": 1.0,
+    "precision": 0.9583333333333334,
+    "recall": 1.0,
+    "redundancy_rate": 0.0,
+    "requirement_coverage": 1.0,
+    "single_memory_accuracy": 1.0
+  },
+  "adaptive_absolute_improvement": 0.16666666666666663,
+  "adaptive_category_accuracy": {
+    "comparison": 1.0,
+    "contradiction": 1.0,
+    "current_state": 1.0,
+    "decision": 1.0,
+    "distractor": 1.0,
+    "historical_state": 1.0,
+    "long_term": 1.0,
+    "multi_hop": 1.0,
+    "multi_memory": 1.0,
+    "preference": 1.0,
+    "project": 1.0,
+    "provenance": 1.0,
+    "redundancy": 1.0,
+    "short_term": 1.0,
+    "supersession": 1.0,
+    "temporal": 1.0
+  },
+  "adaptive_context_change": 0.6637764932562621,
+  "baseline": {
+    "context_tokens": 13.63888888888889,
+    "f1": 0.662037037037037,
+    "precision": 0.7777777777777778,
+    "recall": 0.6111111111111112
+  },
+  "category_accuracy": {
+    "comparison": 0.5,
+    "contradiction": 0.5,
+    "current_state": 1.0,
+    "decision": 1.0,
+    "distractor": 1.0,
+    "historical_state": 1.0,
+    "long_term": 1.0,
+    "multi_hop": 0.3333333333333333,
+    "multi_memory": 0.3333333333333333,
+    "preference": 1.0,
+    "project": 1.0,
+    "provenance": 1.0,
+    "redundancy": 1.0,
+    "short_term": 1.0,
+    "supersession": 1.0,
+    "temporal": 0.5
+  },
+  "configuration": {
+    "context_budget_tokens": 400,
+    "seed": 8128,
+    "top_k": 1
+  },
+  "context_reduction": -0.05702647657841133,
+  "dataset": {
+    "conversations": 220,
+    "entities": 25,
+    "multi_memory_questions": 22,
+    "projects": 5,
+    "questions": 72
+  },
+  "distance_accuracy": {
+    "0-10": 1.0,
+    "101+": 0.7357723577235773,
+    "11-25": 0.875,
+    "26-50": 1.0,
+    "51-100": 0.9649122807017543
+  },
+  "failure_categories": {},
+  "questions": [
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 11,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_789c884cf937f049a0fb"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-130"
+      ],
+      "baseline_context_tokens": 11,
+      "baseline_f1": 1.0,
+      "baseline_precision": 1.0,
+      "baseline_recall": 1.0,
+      "category": "current_state",
+      "difficulty": "hard",
+      "expected_answer": "Atlas now uses MongoDB as primary database.",
+      "expected_memory_ids": [
+        "mem_789c884cf937f049a0fb"
+      ],
+      "expected_project": "atlas",
+      "expected_sources": [
+        "conversation-130"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "atlas-database-current",
+      "is_multi_memory": false,
+      "question": "What storage engine backs Atlas now?",
+      "redstone_context_tokens": 11,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_789c884cf937f049a0fb"
+      ],
+      "retrieved_sources": [
+        "conversation-130"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 21,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_9606d43593f1cb452074"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-003"
+      ],
+      "baseline_context_tokens": 14,
+      "baseline_f1": 0.0,
+      "baseline_precision": 0.0,
+      "baseline_recall": 0.0,
+      "category": "historical_state",
+      "difficulty": "hard",
+      "expected_answer": "Atlas originally chose PostgreSQL as primary database. Decision owner was person-01.",
+      "expected_memory_ids": [
+        "mem_9606d43593f1cb452074"
+      ],
+      "expected_project": "atlas",
+      "expected_sources": [
+        "conversation-003"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "atlas-database-original",
+      "is_multi_memory": false,
+      "question": "What persistence technology did Atlas begin with?",
+      "redstone_context_tokens": 21,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_9606d43593f1cb452074"
+      ],
+      "retrieved_sources": [
+        "conversation-003"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 81,
+      "adaptive_f1": 0.5714285714285715,
+      "adaptive_memories": 5,
+      "adaptive_memory_ids": [
+        "mem_789c884cf937f049a0fb",
+        "mem_9606d43593f1cb452074",
+        "mem_89ffe56d44b67e18d7f7",
+        "mem_f1ebb860a03ab2124951",
+        "mem_aa8abd8d0af9cc6694d2"
+      ],
+      "adaptive_precision": 0.4,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-130",
+        "conversation-003",
+        "conversation-121",
+        "conversation-024",
+        "conversation-120"
+      ],
+      "baseline_context_tokens": 11,
+      "baseline_f1": 0.6666666666666666,
+      "baseline_precision": 1.0,
+      "baseline_recall": 0.5,
+      "category": "temporal",
+      "difficulty": "hard",
+      "expected_answer": "Atlas originally chose PostgreSQL as primary database. Decision owner was person-01. | Atlas now uses MongoDB as primary database.",
+      "expected_memory_ids": [
+        "mem_789c884cf937f049a0fb",
+        "mem_9606d43593f1cb452074"
+      ],
+      "expected_project": "atlas",
+      "expected_sources": [
+        "conversation-003",
+        "conversation-130"
+      ],
+      "expected_time": 130,
+      "failure_category": null,
+      "id": "atlas-database-change",
+      "is_multi_memory": true,
+      "question": "When did Atlas change its primary database?",
+      "redstone_context_tokens": 11,
+      "redstone_f1": 0.6666666666666666,
+      "redstone_precision": 1.0,
+      "redstone_recall": 0.5,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_789c884cf937f049a0fb"
+      ],
+      "retrieved_sources": [
+        "conversation-130"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 14,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_34dc81ae5faa7391a963"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-168"
+      ],
+      "baseline_context_tokens": 14,
+      "baseline_f1": 1.0,
+      "baseline_precision": 1.0,
+      "baseline_recall": 1.0,
+      "category": "supersession",
+      "difficulty": "hard",
+      "expected_answer": "Atlas currently uses Angular for dashboard framework.",
+      "expected_memory_ids": [
+        "mem_34dc81ae5faa7391a963"
+      ],
+      "expected_project": "atlas",
+      "expected_sources": [
+        "conversation-168"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "atlas-framework-current",
+      "is_multi_memory": false,
+      "question": "Which UI stack powers Atlas today?",
+      "redstone_context_tokens": 14,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_34dc81ae5faa7391a963"
+      ],
+      "retrieved_sources": [
+        "conversation-168"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 14,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_f1ebb860a03ab2124951"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-024"
+      ],
+      "baseline_context_tokens": 14,
+      "baseline_f1": 1.0,
+      "baseline_precision": 1.0,
+      "baseline_recall": 1.0,
+      "category": "decision",
+      "difficulty": "hard",
+      "expected_answer": "Atlas originally selected React for dashboard framework.",
+      "expected_memory_ids": [
+        "mem_f1ebb860a03ab2124951"
+      ],
+      "expected_project": "atlas",
+      "expected_sources": [
+        "conversation-024"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "atlas-framework-original",
+      "is_multi_memory": false,
+      "question": "What dashboard framework did Atlas originally select?",
+      "redstone_context_tokens": 14,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_f1ebb860a03ab2124951"
+      ],
+      "retrieved_sources": [
+        "conversation-024"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 11,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_789c884cf937f049a0fb"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-130"
+      ],
+      "baseline_context_tokens": 21,
+      "baseline_f1": 0.0,
+      "baseline_precision": 0.0,
+      "baseline_recall": 0.0,
+      "category": "provenance",
+      "difficulty": "hard",
+      "expected_answer": "Atlas now uses MongoDB as primary database.",
+      "expected_memory_ids": [
+        "mem_789c884cf937f049a0fb"
+      ],
+      "expected_project": "atlas",
+      "expected_sources": [
+        "conversation-130"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "atlas-provenance",
+      "is_multi_memory": false,
+      "question": "Which conversation supports Atlas's current database decision?",
+      "redstone_context_tokens": 11,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_789c884cf937f049a0fb"
+      ],
+      "retrieved_sources": [
+        "conversation-130"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 32,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 2,
+      "adaptive_memory_ids": [
+        "mem_789c884cf937f049a0fb",
+        "mem_9606d43593f1cb452074"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-130",
+        "conversation-003"
+      ],
+      "baseline_context_tokens": 11,
+      "baseline_f1": 0.6666666666666666,
+      "baseline_precision": 1.0,
+      "baseline_recall": 0.5,
+      "category": "comparison",
+      "difficulty": "hard",
+      "expected_answer": "Atlas originally chose PostgreSQL as primary database. Decision owner was person-01. | Atlas now uses MongoDB as primary database.",
+      "expected_memory_ids": [
+        "mem_789c884cf937f049a0fb",
+        "mem_9606d43593f1cb452074"
+      ],
+      "expected_project": "atlas",
+      "expected_sources": [
+        "conversation-003",
+        "conversation-130"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "atlas-database-comparison",
+      "is_multi_memory": true,
+      "question": "Compare Atlas's original and current primary database.",
+      "redstone_context_tokens": 21,
+      "redstone_f1": 0.6666666666666666,
+      "redstone_precision": 1.0,
+      "redstone_recall": 0.5,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_9606d43593f1cb452074"
+      ],
+      "retrieved_sources": [
+        "conversation-003"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 28,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 2,
+      "adaptive_memory_ids": [
+        "mem_34dc81ae5faa7391a963",
+        "mem_f1ebb860a03ab2124951"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-168",
+        "conversation-024"
+      ],
+      "baseline_context_tokens": 14,
+      "baseline_f1": 0.6666666666666666,
+      "baseline_precision": 1.0,
+      "baseline_recall": 0.5,
+      "category": "comparison",
+      "difficulty": "hard",
+      "expected_answer": "Atlas originally selected React for dashboard framework. | Atlas currently uses Angular for dashboard framework.",
+      "expected_memory_ids": [
+        "mem_34dc81ae5faa7391a963",
+        "mem_f1ebb860a03ab2124951"
+      ],
+      "expected_project": "atlas",
+      "expected_sources": [
+        "conversation-024",
+        "conversation-168"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "atlas-framework-comparison",
+      "is_multi_memory": true,
+      "question": "Compare Atlas's original and current dashboard framework.",
+      "redstone_context_tokens": 14,
+      "redstone_f1": 0.6666666666666666,
+      "redstone_precision": 1.0,
+      "redstone_recall": 0.5,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_f1ebb860a03ab2124951"
+      ],
+      "retrieved_sources": [
+        "conversation-024"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 54,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 3,
+      "adaptive_memory_ids": [
+        "mem_9606d43593f1cb452074",
+        "mem_789c884cf937f049a0fb",
+        "mem_89ffe56d44b67e18d7f7"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-003",
+        "conversation-130",
+        "conversation-121"
+      ],
+      "baseline_context_tokens": 21,
+      "baseline_f1": 0.5,
+      "baseline_precision": 1.0,
+      "baseline_recall": 0.3333333333333333,
+      "category": "multi_memory",
+      "difficulty": "hard",
+      "expected_answer": "Atlas originally chose PostgreSQL as primary database. Decision owner was person-01. | Atlas now uses MongoDB as primary database. | Atlas database must work offline; this reliability constraint drives storage selection.",
+      "expected_memory_ids": [
+        "mem_789c884cf937f049a0fb",
+        "mem_89ffe56d44b67e18d7f7",
+        "mem_9606d43593f1cb452074"
+      ],
+      "expected_project": "atlas",
+      "expected_sources": [
+        "conversation-003",
+        "conversation-130",
+        "conversation-121"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "atlas-decision-composition",
+      "is_multi_memory": true,
+      "question": "What database decision changed from original to current for Atlas, why, and cite its source?",
+      "redstone_context_tokens": 21,
+      "redstone_f1": 0.5,
+      "redstone_precision": 1.0,
+      "redstone_recall": 0.3333333333333333,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_9606d43593f1cb452074"
+      ],
+      "retrieved_sources": [
+        "conversation-003"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 11,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_968e5c9b20fa8e203df9"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-138"
+      ],
+      "baseline_context_tokens": 11,
+      "baseline_f1": 1.0,
+      "baseline_precision": 1.0,
+      "baseline_recall": 1.0,
+      "category": "current_state",
+      "difficulty": "hard",
+      "expected_answer": "Nova now uses SQLite as primary database.",
+      "expected_memory_ids": [
+        "mem_968e5c9b20fa8e203df9"
+      ],
+      "expected_project": "nova",
+      "expected_sources": [
+        "conversation-138"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "nova-database-current",
+      "is_multi_memory": false,
+      "question": "What storage engine backs Nova now?",
+      "redstone_context_tokens": 11,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_968e5c9b20fa8e203df9"
+      ],
+      "retrieved_sources": [
+        "conversation-138"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 20,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_dc45037a1b6e0b2d1d08"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-007"
+      ],
+      "baseline_context_tokens": 11,
+      "baseline_f1": 0.0,
+      "baseline_precision": 0.0,
+      "baseline_recall": 0.0,
+      "category": "historical_state",
+      "difficulty": "hard",
+      "expected_answer": "Nova originally chose MySQL as primary database. Decision owner was person-02.",
+      "expected_memory_ids": [
+        "mem_dc45037a1b6e0b2d1d08"
+      ],
+      "expected_project": "nova",
+      "expected_sources": [
+        "conversation-007"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "nova-database-original",
+      "is_multi_memory": false,
+      "question": "What persistence technology did Nova begin with?",
+      "redstone_context_tokens": 20,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_dc45037a1b6e0b2d1d08"
+      ],
+      "retrieved_sources": [
+        "conversation-007"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 79,
+      "adaptive_f1": 0.5714285714285715,
+      "adaptive_memories": 5,
+      "adaptive_memory_ids": [
+        "mem_968e5c9b20fa8e203df9",
+        "mem_dc45037a1b6e0b2d1d08",
+        "mem_38d936dbca48f25b57ca",
+        "mem_fbe7297bd67536f1be80",
+        "mem_35087cca3bd147a3155f"
+      ],
+      "adaptive_precision": 0.4,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-138",
+        "conversation-007",
+        "conversation-123",
+        "conversation-027",
+        "conversation-122"
+      ],
+      "baseline_context_tokens": 11,
+      "baseline_f1": 0.6666666666666666,
+      "baseline_precision": 1.0,
+      "baseline_recall": 0.5,
+      "category": "temporal",
+      "difficulty": "hard",
+      "expected_answer": "Nova originally chose MySQL as primary database. Decision owner was person-02. | Nova now uses SQLite as primary database.",
+      "expected_memory_ids": [
+        "mem_968e5c9b20fa8e203df9",
+        "mem_dc45037a1b6e0b2d1d08"
+      ],
+      "expected_project": "nova",
+      "expected_sources": [
+        "conversation-007",
+        "conversation-138"
+      ],
+      "expected_time": 138,
+      "failure_category": null,
+      "id": "nova-database-change",
+      "is_multi_memory": true,
+      "question": "When did Nova change its primary database?",
+      "redstone_context_tokens": 11,
+      "redstone_f1": 0.6666666666666666,
+      "redstone_precision": 1.0,
+      "redstone_recall": 0.5,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_968e5c9b20fa8e203df9"
+      ],
+      "retrieved_sources": [
+        "conversation-138"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 13,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_c5ee421149382a2a91ef"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-172"
+      ],
+      "baseline_context_tokens": 11,
+      "baseline_f1": 0.0,
+      "baseline_precision": 0.0,
+      "baseline_recall": 0.0,
+      "category": "supersession",
+      "difficulty": "hard",
+      "expected_answer": "Nova currently uses Svelte for dashboard framework.",
+      "expected_memory_ids": [
+        "mem_c5ee421149382a2a91ef"
+      ],
+      "expected_project": "nova",
+      "expected_sources": [
+        "conversation-172"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "nova-framework-current",
+      "is_multi_memory": false,
+      "question": "Which UI stack powers Nova today?",
+      "redstone_context_tokens": 13,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_c5ee421149382a2a91ef"
+      ],
+      "retrieved_sources": [
+        "conversation-172"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 14,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_fbe7297bd67536f1be80"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-027"
+      ],
+      "baseline_context_tokens": 14,
+      "baseline_f1": 1.0,
+      "baseline_precision": 1.0,
+      "baseline_recall": 1.0,
+      "category": "decision",
+      "difficulty": "hard",
+      "expected_answer": "Nova originally selected Vue for dashboard framework.",
+      "expected_memory_ids": [
+        "mem_fbe7297bd67536f1be80"
+      ],
+      "expected_project": "nova",
+      "expected_sources": [
+        "conversation-027"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "nova-framework-original",
+      "is_multi_memory": false,
+      "question": "What dashboard framework did Nova originally select?",
+      "redstone_context_tokens": 14,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_fbe7297bd67536f1be80"
+      ],
+      "retrieved_sources": [
+        "conversation-027"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 11,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_968e5c9b20fa8e203df9"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-138"
+      ],
+      "baseline_context_tokens": 20,
+      "baseline_f1": 0.0,
+      "baseline_precision": 0.0,
+      "baseline_recall": 0.0,
+      "category": "provenance",
+      "difficulty": "hard",
+      "expected_answer": "Nova now uses SQLite as primary database.",
+      "expected_memory_ids": [
+        "mem_968e5c9b20fa8e203df9"
+      ],
+      "expected_project": "nova",
+      "expected_sources": [
+        "conversation-138"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "nova-provenance",
+      "is_multi_memory": false,
+      "question": "Which conversation supports Nova's current database decision?",
+      "redstone_context_tokens": 11,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_968e5c9b20fa8e203df9"
+      ],
+      "retrieved_sources": [
+        "conversation-138"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 31,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 2,
+      "adaptive_memory_ids": [
+        "mem_968e5c9b20fa8e203df9",
+        "mem_dc45037a1b6e0b2d1d08"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-138",
+        "conversation-007"
+      ],
+      "baseline_context_tokens": 11,
+      "baseline_f1": 0.6666666666666666,
+      "baseline_precision": 1.0,
+      "baseline_recall": 0.5,
+      "category": "comparison",
+      "difficulty": "hard",
+      "expected_answer": "Nova originally chose MySQL as primary database. Decision owner was person-02. | Nova now uses SQLite as primary database.",
+      "expected_memory_ids": [
+        "mem_968e5c9b20fa8e203df9",
+        "mem_dc45037a1b6e0b2d1d08"
+      ],
+      "expected_project": "nova",
+      "expected_sources": [
+        "conversation-007",
+        "conversation-138"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "nova-database-comparison",
+      "is_multi_memory": true,
+      "question": "Compare Nova's original and current primary database.",
+      "redstone_context_tokens": 20,
+      "redstone_f1": 0.6666666666666666,
+      "redstone_precision": 1.0,
+      "redstone_recall": 0.5,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_dc45037a1b6e0b2d1d08"
+      ],
+      "retrieved_sources": [
+        "conversation-007"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 27,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 2,
+      "adaptive_memory_ids": [
+        "mem_c5ee421149382a2a91ef",
+        "mem_fbe7297bd67536f1be80"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-172",
+        "conversation-027"
+      ],
+      "baseline_context_tokens": 13,
+      "baseline_f1": 0.6666666666666666,
+      "baseline_precision": 1.0,
+      "baseline_recall": 0.5,
+      "category": "comparison",
+      "difficulty": "hard",
+      "expected_answer": "Nova originally selected Vue for dashboard framework. | Nova currently uses Svelte for dashboard framework.",
+      "expected_memory_ids": [
+        "mem_c5ee421149382a2a91ef",
+        "mem_fbe7297bd67536f1be80"
+      ],
+      "expected_project": "nova",
+      "expected_sources": [
+        "conversation-027",
+        "conversation-172"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "nova-framework-comparison",
+      "is_multi_memory": true,
+      "question": "Compare Nova's original and current dashboard framework.",
+      "redstone_context_tokens": 14,
+      "redstone_f1": 0.6666666666666666,
+      "redstone_precision": 1.0,
+      "redstone_recall": 0.5,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_fbe7297bd67536f1be80"
+      ],
+      "retrieved_sources": [
+        "conversation-027"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 53,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 3,
+      "adaptive_memory_ids": [
+        "mem_dc45037a1b6e0b2d1d08",
+        "mem_968e5c9b20fa8e203df9",
+        "mem_38d936dbca48f25b57ca"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-007",
+        "conversation-138",
+        "conversation-123"
+      ],
+      "baseline_context_tokens": 20,
+      "baseline_f1": 0.5,
+      "baseline_precision": 1.0,
+      "baseline_recall": 0.3333333333333333,
+      "category": "multi_memory",
+      "difficulty": "hard",
+      "expected_answer": "Nova originally chose MySQL as primary database. Decision owner was person-02. | Nova now uses SQLite as primary database. | Nova database must work offline; this reliability constraint drives storage selection.",
+      "expected_memory_ids": [
+        "mem_38d936dbca48f25b57ca",
+        "mem_968e5c9b20fa8e203df9",
+        "mem_dc45037a1b6e0b2d1d08"
+      ],
+      "expected_project": "nova",
+      "expected_sources": [
+        "conversation-007",
+        "conversation-138",
+        "conversation-123"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "nova-decision-composition",
+      "is_multi_memory": true,
+      "question": "What database decision changed from original to current for Nova, why, and cite its source?",
+      "redstone_context_tokens": 20,
+      "redstone_f1": 0.5,
+      "redstone_precision": 1.0,
+      "redstone_recall": 0.3333333333333333,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_dc45037a1b6e0b2d1d08"
+      ],
+      "retrieved_sources": [
+        "conversation-007"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 11,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_ecfbc3da2174efabff91"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-146"
+      ],
+      "baseline_context_tokens": 11,
+      "baseline_f1": 1.0,
+      "baseline_precision": 1.0,
+      "baseline_recall": 1.0,
+      "category": "current_state",
+      "difficulty": "hard",
+      "expected_answer": "Orion now uses DuckDB as primary database.",
+      "expected_memory_ids": [
+        "mem_ecfbc3da2174efabff91"
+      ],
+      "expected_project": "orion",
+      "expected_sources": [
+        "conversation-146"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "orion-database-current",
+      "is_multi_memory": false,
+      "question": "What storage engine backs Orion now?",
+      "redstone_context_tokens": 11,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_ecfbc3da2174efabff91"
+      ],
+      "retrieved_sources": [
+        "conversation-146"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 21,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_7c612651d58eb20cb13d"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-011"
+      ],
+      "baseline_context_tokens": 14,
+      "baseline_f1": 0.0,
+      "baseline_precision": 0.0,
+      "baseline_recall": 0.0,
+      "category": "historical_state",
+      "difficulty": "hard",
+      "expected_answer": "Orion originally chose MongoDB as primary database. Decision owner was person-03.",
+      "expected_memory_ids": [
+        "mem_7c612651d58eb20cb13d"
+      ],
+      "expected_project": "orion",
+      "expected_sources": [
+        "conversation-011"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "orion-database-original",
+      "is_multi_memory": false,
+      "question": "What persistence technology did Orion begin with?",
+      "redstone_context_tokens": 21,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_7c612651d58eb20cb13d"
+      ],
+      "retrieved_sources": [
+        "conversation-011"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 82,
+      "adaptive_f1": 0.5714285714285715,
+      "adaptive_memories": 5,
+      "adaptive_memory_ids": [
+        "mem_ecfbc3da2174efabff91",
+        "mem_7c612651d58eb20cb13d",
+        "mem_bc81b4f2bf6df95aefbd",
+        "mem_8b3465a95c669532dbec",
+        "mem_9020488fc573d9974bbb"
+      ],
+      "adaptive_precision": 0.4,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-146",
+        "conversation-011",
+        "conversation-125",
+        "conversation-030",
+        "conversation-124"
+      ],
+      "baseline_context_tokens": 11,
+      "baseline_f1": 0.6666666666666666,
+      "baseline_precision": 1.0,
+      "baseline_recall": 0.5,
+      "category": "temporal",
+      "difficulty": "hard",
+      "expected_answer": "Orion originally chose MongoDB as primary database. Decision owner was person-03. | Orion now uses DuckDB as primary database.",
+      "expected_memory_ids": [
+        "mem_7c612651d58eb20cb13d",
+        "mem_ecfbc3da2174efabff91"
+      ],
+      "expected_project": "orion",
+      "expected_sources": [
+        "conversation-011",
+        "conversation-146"
+      ],
+      "expected_time": 146,
+      "failure_category": null,
+      "id": "orion-database-change",
+      "is_multi_memory": true,
+      "question": "When did Orion change its primary database?",
+      "redstone_context_tokens": 11,
+      "redstone_f1": 0.6666666666666666,
+      "redstone_precision": 1.0,
+      "redstone_recall": 0.5,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_ecfbc3da2174efabff91"
+      ],
+      "retrieved_sources": [
+        "conversation-146"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 14,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_1d82ae99c899bc375b17"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-176"
+      ],
+      "baseline_context_tokens": 14,
+      "baseline_f1": 1.0,
+      "baseline_precision": 1.0,
+      "baseline_recall": 1.0,
+      "category": "supersession",
+      "difficulty": "hard",
+      "expected_answer": "Orion currently uses SolidJS for dashboard framework.",
+      "expected_memory_ids": [
+        "mem_1d82ae99c899bc375b17"
+      ],
+      "expected_project": "orion",
+      "expected_sources": [
+        "conversation-176"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "orion-framework-current",
+      "is_multi_memory": false,
+      "question": "Which UI stack powers Orion today?",
+      "redstone_context_tokens": 14,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_1d82ae99c899bc375b17"
+      ],
+      "retrieved_sources": [
+        "conversation-176"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 15,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_8b3465a95c669532dbec"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-030"
+      ],
+      "baseline_context_tokens": 15,
+      "baseline_f1": 1.0,
+      "baseline_precision": 1.0,
+      "baseline_recall": 1.0,
+      "category": "decision",
+      "difficulty": "hard",
+      "expected_answer": "Orion originally selected Angular for dashboard framework.",
+      "expected_memory_ids": [
+        "mem_8b3465a95c669532dbec"
+      ],
+      "expected_project": "orion",
+      "expected_sources": [
+        "conversation-030"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "orion-framework-original",
+      "is_multi_memory": false,
+      "question": "What dashboard framework did Orion originally select?",
+      "redstone_context_tokens": 15,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_8b3465a95c669532dbec"
+      ],
+      "retrieved_sources": [
+        "conversation-030"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 11,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_ecfbc3da2174efabff91"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-146"
+      ],
+      "baseline_context_tokens": 21,
+      "baseline_f1": 0.0,
+      "baseline_precision": 0.0,
+      "baseline_recall": 0.0,
+      "category": "provenance",
+      "difficulty": "hard",
+      "expected_answer": "Orion now uses DuckDB as primary database.",
+      "expected_memory_ids": [
+        "mem_ecfbc3da2174efabff91"
+      ],
+      "expected_project": "orion",
+      "expected_sources": [
+        "conversation-146"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "orion-provenance",
+      "is_multi_memory": false,
+      "question": "Which conversation supports Orion's current database decision?",
+      "redstone_context_tokens": 11,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_ecfbc3da2174efabff91"
+      ],
+      "retrieved_sources": [
+        "conversation-146"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 32,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 2,
+      "adaptive_memory_ids": [
+        "mem_ecfbc3da2174efabff91",
+        "mem_7c612651d58eb20cb13d"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-146",
+        "conversation-011"
+      ],
+      "baseline_context_tokens": 11,
+      "baseline_f1": 0.6666666666666666,
+      "baseline_precision": 1.0,
+      "baseline_recall": 0.5,
+      "category": "comparison",
+      "difficulty": "hard",
+      "expected_answer": "Orion originally chose MongoDB as primary database. Decision owner was person-03. | Orion now uses DuckDB as primary database.",
+      "expected_memory_ids": [
+        "mem_7c612651d58eb20cb13d",
+        "mem_ecfbc3da2174efabff91"
+      ],
+      "expected_project": "orion",
+      "expected_sources": [
+        "conversation-011",
+        "conversation-146"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "orion-database-comparison",
+      "is_multi_memory": true,
+      "question": "Compare Orion's original and current primary database.",
+      "redstone_context_tokens": 21,
+      "redstone_f1": 0.6666666666666666,
+      "redstone_precision": 1.0,
+      "redstone_recall": 0.5,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_7c612651d58eb20cb13d"
+      ],
+      "retrieved_sources": [
+        "conversation-011"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 29,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 2,
+      "adaptive_memory_ids": [
+        "mem_1d82ae99c899bc375b17",
+        "mem_8b3465a95c669532dbec"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-176",
+        "conversation-030"
+      ],
+      "baseline_context_tokens": 14,
+      "baseline_f1": 0.6666666666666666,
+      "baseline_precision": 1.0,
+      "baseline_recall": 0.5,
+      "category": "comparison",
+      "difficulty": "hard",
+      "expected_answer": "Orion originally selected Angular for dashboard framework. | Orion currently uses SolidJS for dashboard framework.",
+      "expected_memory_ids": [
+        "mem_1d82ae99c899bc375b17",
+        "mem_8b3465a95c669532dbec"
+      ],
+      "expected_project": "orion",
+      "expected_sources": [
+        "conversation-030",
+        "conversation-176"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "orion-framework-comparison",
+      "is_multi_memory": true,
+      "question": "Compare Orion's original and current dashboard framework.",
+      "redstone_context_tokens": 15,
+      "redstone_f1": 0.6666666666666666,
+      "redstone_precision": 1.0,
+      "redstone_recall": 0.5,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_8b3465a95c669532dbec"
+      ],
+      "retrieved_sources": [
+        "conversation-030"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 54,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 3,
+      "adaptive_memory_ids": [
+        "mem_7c612651d58eb20cb13d",
+        "mem_ecfbc3da2174efabff91",
+        "mem_bc81b4f2bf6df95aefbd"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-011",
+        "conversation-146",
+        "conversation-125"
+      ],
+      "baseline_context_tokens": 21,
+      "baseline_f1": 0.5,
+      "baseline_precision": 1.0,
+      "baseline_recall": 0.3333333333333333,
+      "category": "multi_memory",
+      "difficulty": "hard",
+      "expected_answer": "Orion originally chose MongoDB as primary database. Decision owner was person-03. | Orion now uses DuckDB as primary database. | Orion database must work offline; this reliability constraint drives storage selection.",
+      "expected_memory_ids": [
+        "mem_7c612651d58eb20cb13d",
+        "mem_bc81b4f2bf6df95aefbd",
+        "mem_ecfbc3da2174efabff91"
+      ],
+      "expected_project": "orion",
+      "expected_sources": [
+        "conversation-011",
+        "conversation-146",
+        "conversation-125"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "orion-decision-composition",
+      "is_multi_memory": true,
+      "question": "What database decision changed from original to current for Orion, why, and cite its source?",
+      "redstone_context_tokens": 21,
+      "redstone_f1": 0.5,
+      "redstone_precision": 1.0,
+      "redstone_recall": 0.3333333333333333,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_7c612651d58eb20cb13d"
+      ],
+      "retrieved_sources": [
+        "conversation-011"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 13,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_b0ea366bb66d82fd5421"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-154"
+      ],
+      "baseline_context_tokens": 13,
+      "baseline_f1": 1.0,
+      "baseline_precision": 1.0,
+      "baseline_recall": 1.0,
+      "category": "current_state",
+      "difficulty": "hard",
+      "expected_answer": "Redstone now uses PostgreSQL as primary database.",
+      "expected_memory_ids": [
+        "mem_b0ea366bb66d82fd5421"
+      ],
+      "expected_project": "redstone",
+      "expected_sources": [
+        "conversation-154"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "redstone-database-current",
+      "is_multi_memory": false,
+      "question": "What storage engine backs Redstone now?",
+      "redstone_context_tokens": 13,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_b0ea366bb66d82fd5421"
+      ],
+      "retrieved_sources": [
+        "conversation-154"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 21,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_a5a18927535617fb2625"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-015"
+      ],
+      "baseline_context_tokens": 10,
+      "baseline_f1": 0.0,
+      "baseline_precision": 0.0,
+      "baseline_recall": 0.0,
+      "category": "historical_state",
+      "difficulty": "hard",
+      "expected_answer": "Redstone originally chose SQLite as primary database. Decision owner was person-04.",
+      "expected_memory_ids": [
+        "mem_a5a18927535617fb2625"
+      ],
+      "expected_project": "redstone",
+      "expected_sources": [
+        "conversation-015"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "redstone-database-original",
+      "is_multi_memory": false,
+      "question": "What persistence technology did Redstone begin with?",
+      "redstone_context_tokens": 21,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_a5a18927535617fb2625"
+      ],
+      "retrieved_sources": [
+        "conversation-015"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 85,
+      "adaptive_f1": 0.5714285714285715,
+      "adaptive_memories": 5,
+      "adaptive_memory_ids": [
+        "mem_b0ea366bb66d82fd5421",
+        "mem_a5a18927535617fb2625",
+        "mem_4aafe2ff7dea6129e028",
+        "mem_df02ba1e0c9aab02134b",
+        "mem_7635f9bb7253a692b143"
+      ],
+      "adaptive_precision": 0.4,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-154",
+        "conversation-015",
+        "conversation-127",
+        "conversation-033",
+        "conversation-126"
+      ],
+      "baseline_context_tokens": 13,
+      "baseline_f1": 0.6666666666666666,
+      "baseline_precision": 1.0,
+      "baseline_recall": 0.5,
+      "category": "temporal",
+      "difficulty": "hard",
+      "expected_answer": "Redstone originally chose SQLite as primary database. Decision owner was person-04. | Redstone now uses PostgreSQL as primary database.",
+      "expected_memory_ids": [
+        "mem_a5a18927535617fb2625",
+        "mem_b0ea366bb66d82fd5421"
+      ],
+      "expected_project": "redstone",
+      "expected_sources": [
+        "conversation-015",
+        "conversation-154"
+      ],
+      "expected_time": 154,
+      "failure_category": null,
+      "id": "redstone-database-change",
+      "is_multi_memory": true,
+      "question": "When did Redstone change its primary database?",
+      "redstone_context_tokens": 13,
+      "redstone_f1": 0.6666666666666666,
+      "redstone_precision": 1.0,
+      "redstone_recall": 0.5,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_b0ea366bb66d82fd5421"
+      ],
+      "retrieved_sources": [
+        "conversation-154"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 14,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_a83a49bca95511b00071"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-180"
+      ],
+      "baseline_context_tokens": 10,
+      "baseline_f1": 0.0,
+      "baseline_precision": 0.0,
+      "baseline_recall": 0.0,
+      "category": "supersession",
+      "difficulty": "hard",
+      "expected_answer": "Redstone currently uses React for dashboard framework.",
+      "expected_memory_ids": [
+        "mem_a83a49bca95511b00071"
+      ],
+      "expected_project": "redstone",
+      "expected_sources": [
+        "conversation-180"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "redstone-framework-current",
+      "is_multi_memory": false,
+      "question": "Which UI stack powers Redstone today?",
+      "redstone_context_tokens": 14,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_a83a49bca95511b00071"
+      ],
+      "retrieved_sources": [
+        "conversation-180"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 15,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_df02ba1e0c9aab02134b"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-033"
+      ],
+      "baseline_context_tokens": 15,
+      "baseline_f1": 1.0,
+      "baseline_precision": 1.0,
+      "baseline_recall": 1.0,
+      "category": "decision",
+      "difficulty": "hard",
+      "expected_answer": "Redstone originally selected Svelte for dashboard framework.",
+      "expected_memory_ids": [
+        "mem_df02ba1e0c9aab02134b"
+      ],
+      "expected_project": "redstone",
+      "expected_sources": [
+        "conversation-033"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "redstone-framework-original",
+      "is_multi_memory": false,
+      "question": "What dashboard framework did Redstone originally select?",
+      "redstone_context_tokens": 15,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_df02ba1e0c9aab02134b"
+      ],
+      "retrieved_sources": [
+        "conversation-033"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 13,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_b0ea366bb66d82fd5421"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-154"
+      ],
+      "baseline_context_tokens": 21,
+      "baseline_f1": 0.0,
+      "baseline_precision": 0.0,
+      "baseline_recall": 0.0,
+      "category": "provenance",
+      "difficulty": "hard",
+      "expected_answer": "Redstone now uses PostgreSQL as primary database.",
+      "expected_memory_ids": [
+        "mem_b0ea366bb66d82fd5421"
+      ],
+      "expected_project": "redstone",
+      "expected_sources": [
+        "conversation-154"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "redstone-provenance",
+      "is_multi_memory": false,
+      "question": "Which conversation supports Redstone's current database decision?",
+      "redstone_context_tokens": 13,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_b0ea366bb66d82fd5421"
+      ],
+      "retrieved_sources": [
+        "conversation-154"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 34,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 2,
+      "adaptive_memory_ids": [
+        "mem_b0ea366bb66d82fd5421",
+        "mem_a5a18927535617fb2625"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-154",
+        "conversation-015"
+      ],
+      "baseline_context_tokens": 13,
+      "baseline_f1": 0.6666666666666666,
+      "baseline_precision": 1.0,
+      "baseline_recall": 0.5,
+      "category": "comparison",
+      "difficulty": "hard",
+      "expected_answer": "Redstone originally chose SQLite as primary database. Decision owner was person-04. | Redstone now uses PostgreSQL as primary database.",
+      "expected_memory_ids": [
+        "mem_a5a18927535617fb2625",
+        "mem_b0ea366bb66d82fd5421"
+      ],
+      "expected_project": "redstone",
+      "expected_sources": [
+        "conversation-015",
+        "conversation-154"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "redstone-database-comparison",
+      "is_multi_memory": true,
+      "question": "Compare Redstone's original and current primary database.",
+      "redstone_context_tokens": 21,
+      "redstone_f1": 0.6666666666666666,
+      "redstone_precision": 1.0,
+      "redstone_recall": 0.5,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_a5a18927535617fb2625"
+      ],
+      "retrieved_sources": [
+        "conversation-015"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 29,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 2,
+      "adaptive_memory_ids": [
+        "mem_a83a49bca95511b00071",
+        "mem_df02ba1e0c9aab02134b"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-180",
+        "conversation-033"
+      ],
+      "baseline_context_tokens": 14,
+      "baseline_f1": 0.6666666666666666,
+      "baseline_precision": 1.0,
+      "baseline_recall": 0.5,
+      "category": "comparison",
+      "difficulty": "hard",
+      "expected_answer": "Redstone originally selected Svelte for dashboard framework. | Redstone currently uses React for dashboard framework.",
+      "expected_memory_ids": [
+        "mem_a83a49bca95511b00071",
+        "mem_df02ba1e0c9aab02134b"
+      ],
+      "expected_project": "redstone",
+      "expected_sources": [
+        "conversation-033",
+        "conversation-180"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "redstone-framework-comparison",
+      "is_multi_memory": true,
+      "question": "Compare Redstone's original and current dashboard framework.",
+      "redstone_context_tokens": 15,
+      "redstone_f1": 0.6666666666666666,
+      "redstone_precision": 1.0,
+      "redstone_recall": 0.5,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_df02ba1e0c9aab02134b"
+      ],
+      "retrieved_sources": [
+        "conversation-033"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 57,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 3,
+      "adaptive_memory_ids": [
+        "mem_a5a18927535617fb2625",
+        "mem_b0ea366bb66d82fd5421",
+        "mem_4aafe2ff7dea6129e028"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-015",
+        "conversation-154",
+        "conversation-127"
+      ],
+      "baseline_context_tokens": 21,
+      "baseline_f1": 0.5,
+      "baseline_precision": 1.0,
+      "baseline_recall": 0.3333333333333333,
+      "category": "multi_memory",
+      "difficulty": "hard",
+      "expected_answer": "Redstone originally chose SQLite as primary database. Decision owner was person-04. | Redstone now uses PostgreSQL as primary database. | Redstone database must work offline; this reliability constraint drives storage selection.",
+      "expected_memory_ids": [
+        "mem_4aafe2ff7dea6129e028",
+        "mem_a5a18927535617fb2625",
+        "mem_b0ea366bb66d82fd5421"
+      ],
+      "expected_project": "redstone",
+      "expected_sources": [
+        "conversation-015",
+        "conversation-154",
+        "conversation-127"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "redstone-decision-composition",
+      "is_multi_memory": true,
+      "question": "What database decision changed from original to current for Redstone, why, and cite its source?",
+      "redstone_context_tokens": 21,
+      "redstone_f1": 0.5,
+      "redstone_precision": 1.0,
+      "redstone_recall": 0.3333333333333333,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_a5a18927535617fb2625"
+      ],
+      "retrieved_sources": [
+        "conversation-015"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 11,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_d4850612156d98d5de2f"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-162"
+      ],
+      "baseline_context_tokens": 11,
+      "baseline_f1": 1.0,
+      "baseline_precision": 1.0,
+      "baseline_recall": 1.0,
+      "category": "current_state",
+      "difficulty": "hard",
+      "expected_answer": "Helix now uses MySQL as primary database.",
+      "expected_memory_ids": [
+        "mem_d4850612156d98d5de2f"
+      ],
+      "expected_project": "helix",
+      "expected_sources": [
+        "conversation-162"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "helix-database-current",
+      "is_multi_memory": false,
+      "question": "What storage engine backs Helix now?",
+      "redstone_context_tokens": 11,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_d4850612156d98d5de2f"
+      ],
+      "retrieved_sources": [
+        "conversation-162"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 20,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_6b7e59b81ad14dc27542"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-019"
+      ],
+      "baseline_context_tokens": 10,
+      "baseline_f1": 0.0,
+      "baseline_precision": 0.0,
+      "baseline_recall": 0.0,
+      "category": "historical_state",
+      "difficulty": "hard",
+      "expected_answer": "Helix originally chose DuckDB as primary database. Decision owner was person-05.",
+      "expected_memory_ids": [
+        "mem_6b7e59b81ad14dc27542"
+      ],
+      "expected_project": "helix",
+      "expected_sources": [
+        "conversation-019"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "helix-database-original",
+      "is_multi_memory": false,
+      "question": "What persistence technology did Helix begin with?",
+      "redstone_context_tokens": 20,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_6b7e59b81ad14dc27542"
+      ],
+      "retrieved_sources": [
+        "conversation-019"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 81,
+      "adaptive_f1": 0.5714285714285715,
+      "adaptive_memories": 5,
+      "adaptive_memory_ids": [
+        "mem_d4850612156d98d5de2f",
+        "mem_6b7e59b81ad14dc27542",
+        "mem_6e11141b855810aae639",
+        "mem_362edd007029065381ba",
+        "mem_832b9eef55c6ff1dbaad"
+      ],
+      "adaptive_precision": 0.4,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-162",
+        "conversation-019",
+        "conversation-129",
+        "conversation-036",
+        "conversation-128"
+      ],
+      "baseline_context_tokens": 11,
+      "baseline_f1": 0.6666666666666666,
+      "baseline_precision": 1.0,
+      "baseline_recall": 0.5,
+      "category": "temporal",
+      "difficulty": "hard",
+      "expected_answer": "Helix originally chose DuckDB as primary database. Decision owner was person-05. | Helix now uses MySQL as primary database.",
+      "expected_memory_ids": [
+        "mem_6b7e59b81ad14dc27542",
+        "mem_d4850612156d98d5de2f"
+      ],
+      "expected_project": "helix",
+      "expected_sources": [
+        "conversation-019",
+        "conversation-162"
+      ],
+      "expected_time": 162,
+      "failure_category": null,
+      "id": "helix-database-change",
+      "is_multi_memory": true,
+      "question": "When did Helix change its primary database?",
+      "redstone_context_tokens": 11,
+      "redstone_f1": 0.6666666666666666,
+      "redstone_precision": 1.0,
+      "redstone_recall": 0.5,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_d4850612156d98d5de2f"
+      ],
+      "retrieved_sources": [
+        "conversation-162"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 13,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_dcf45777c5c690424128"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-184"
+      ],
+      "baseline_context_tokens": 10,
+      "baseline_f1": 0.0,
+      "baseline_precision": 0.0,
+      "baseline_recall": 0.0,
+      "category": "supersession",
+      "difficulty": "hard",
+      "expected_answer": "Helix currently uses Vue for dashboard framework.",
+      "expected_memory_ids": [
+        "mem_dcf45777c5c690424128"
+      ],
+      "expected_project": "helix",
+      "expected_sources": [
+        "conversation-184"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "helix-framework-current",
+      "is_multi_memory": false,
+      "question": "Which UI stack powers Helix today?",
+      "redstone_context_tokens": 13,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_dcf45777c5c690424128"
+      ],
+      "retrieved_sources": [
+        "conversation-184"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 15,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_362edd007029065381ba"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-036"
+      ],
+      "baseline_context_tokens": 15,
+      "baseline_f1": 1.0,
+      "baseline_precision": 1.0,
+      "baseline_recall": 1.0,
+      "category": "decision",
+      "difficulty": "hard",
+      "expected_answer": "Helix originally selected SolidJS for dashboard framework.",
+      "expected_memory_ids": [
+        "mem_362edd007029065381ba"
+      ],
+      "expected_project": "helix",
+      "expected_sources": [
+        "conversation-036"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "helix-framework-original",
+      "is_multi_memory": false,
+      "question": "What dashboard framework did Helix originally select?",
+      "redstone_context_tokens": 15,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_362edd007029065381ba"
+      ],
+      "retrieved_sources": [
+        "conversation-036"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 11,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_d4850612156d98d5de2f"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-162"
+      ],
+      "baseline_context_tokens": 20,
+      "baseline_f1": 0.0,
+      "baseline_precision": 0.0,
+      "baseline_recall": 0.0,
+      "category": "provenance",
+      "difficulty": "hard",
+      "expected_answer": "Helix now uses MySQL as primary database.",
+      "expected_memory_ids": [
+        "mem_d4850612156d98d5de2f"
+      ],
+      "expected_project": "helix",
+      "expected_sources": [
+        "conversation-162"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "helix-provenance",
+      "is_multi_memory": false,
+      "question": "Which conversation supports Helix's current database decision?",
+      "redstone_context_tokens": 11,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_d4850612156d98d5de2f"
+      ],
+      "retrieved_sources": [
+        "conversation-162"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 31,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 2,
+      "adaptive_memory_ids": [
+        "mem_d4850612156d98d5de2f",
+        "mem_6b7e59b81ad14dc27542"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-162",
+        "conversation-019"
+      ],
+      "baseline_context_tokens": 11,
+      "baseline_f1": 0.6666666666666666,
+      "baseline_precision": 1.0,
+      "baseline_recall": 0.5,
+      "category": "comparison",
+      "difficulty": "hard",
+      "expected_answer": "Helix originally chose DuckDB as primary database. Decision owner was person-05. | Helix now uses MySQL as primary database.",
+      "expected_memory_ids": [
+        "mem_6b7e59b81ad14dc27542",
+        "mem_d4850612156d98d5de2f"
+      ],
+      "expected_project": "helix",
+      "expected_sources": [
+        "conversation-019",
+        "conversation-162"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "helix-database-comparison",
+      "is_multi_memory": true,
+      "question": "Compare Helix's original and current primary database.",
+      "redstone_context_tokens": 20,
+      "redstone_f1": 0.6666666666666666,
+      "redstone_precision": 1.0,
+      "redstone_recall": 0.5,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_6b7e59b81ad14dc27542"
+      ],
+      "retrieved_sources": [
+        "conversation-019"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 28,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 2,
+      "adaptive_memory_ids": [
+        "mem_dcf45777c5c690424128",
+        "mem_362edd007029065381ba"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-184",
+        "conversation-036"
+      ],
+      "baseline_context_tokens": 13,
+      "baseline_f1": 0.6666666666666666,
+      "baseline_precision": 1.0,
+      "baseline_recall": 0.5,
+      "category": "comparison",
+      "difficulty": "hard",
+      "expected_answer": "Helix originally selected SolidJS for dashboard framework. | Helix currently uses Vue for dashboard framework.",
+      "expected_memory_ids": [
+        "mem_362edd007029065381ba",
+        "mem_dcf45777c5c690424128"
+      ],
+      "expected_project": "helix",
+      "expected_sources": [
+        "conversation-036",
+        "conversation-184"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "helix-framework-comparison",
+      "is_multi_memory": true,
+      "question": "Compare Helix's original and current dashboard framework.",
+      "redstone_context_tokens": 15,
+      "redstone_f1": 0.6666666666666666,
+      "redstone_precision": 1.0,
+      "redstone_recall": 0.5,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_362edd007029065381ba"
+      ],
+      "retrieved_sources": [
+        "conversation-036"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 53,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 3,
+      "adaptive_memory_ids": [
+        "mem_6b7e59b81ad14dc27542",
+        "mem_d4850612156d98d5de2f",
+        "mem_6e11141b855810aae639"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-019",
+        "conversation-162",
+        "conversation-129"
+      ],
+      "baseline_context_tokens": 20,
+      "baseline_f1": 0.5,
+      "baseline_precision": 1.0,
+      "baseline_recall": 0.3333333333333333,
+      "category": "multi_memory",
+      "difficulty": "hard",
+      "expected_answer": "Helix originally chose DuckDB as primary database. Decision owner was person-05. | Helix now uses MySQL as primary database. | Helix database must work offline; this reliability constraint drives storage selection.",
+      "expected_memory_ids": [
+        "mem_6b7e59b81ad14dc27542",
+        "mem_6e11141b855810aae639",
+        "mem_d4850612156d98d5de2f"
+      ],
+      "expected_project": "helix",
+      "expected_sources": [
+        "conversation-019",
+        "conversation-162",
+        "conversation-129"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "helix-decision-composition",
+      "is_multi_memory": true,
+      "question": "What database decision changed from original to current for Helix, why, and cite its source?",
+      "redstone_context_tokens": 20,
+      "redstone_f1": 0.5,
+      "redstone_precision": 1.0,
+      "redstone_recall": 0.3333333333333333,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_6b7e59b81ad14dc27542"
+      ],
+      "retrieved_sources": [
+        "conversation-019"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 15,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_da0fca5e43d6c0ea5f1b"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-151"
+      ],
+      "baseline_context_tokens": 16,
+      "baseline_f1": 0.0,
+      "baseline_precision": 0.0,
+      "baseline_recall": 0.0,
+      "category": "preference",
+      "difficulty": "hard",
+      "expected_answer": "User now prefers concise bullet summaries for report style.",
+      "expected_memory_ids": [
+        "mem_da0fca5e43d6c0ea5f1b"
+      ],
+      "expected_project": "preferences",
+      "expected_sources": [
+        "conversation-151"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "preference-0-current",
+      "is_multi_memory": false,
+      "question": "What does user currently prefer for report style?",
+      "redstone_context_tokens": 15,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_da0fca5e43d6c0ea5f1b"
+      ],
+      "retrieved_sources": [
+        "conversation-151"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 16,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_39758814106dc1088450"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-042"
+      ],
+      "baseline_context_tokens": 16,
+      "baseline_f1": 1.0,
+      "baseline_precision": 1.0,
+      "baseline_recall": 1.0,
+      "category": "historical_state",
+      "difficulty": "hard",
+      "expected_answer": "User originally preferred verbose narratives for report style.",
+      "expected_memory_ids": [
+        "mem_39758814106dc1088450"
+      ],
+      "expected_project": "preferences",
+      "expected_sources": [
+        "conversation-042"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "preference-0-original",
+      "is_multi_memory": false,
+      "question": "What did user originally prefer for report style?",
+      "redstone_context_tokens": 16,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_39758814106dc1088450"
+      ],
+      "retrieved_sources": [
+        "conversation-042"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 12,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_2382e8b0e618474b5b77"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-153"
+      ],
+      "baseline_context_tokens": 12,
+      "baseline_f1": 1.0,
+      "baseline_precision": 1.0,
+      "baseline_recall": 1.0,
+      "category": "preference",
+      "difficulty": "hard",
+      "expected_answer": "User now prefers Python for primary language.",
+      "expected_memory_ids": [
+        "mem_2382e8b0e618474b5b77"
+      ],
+      "expected_project": "preferences",
+      "expected_sources": [
+        "conversation-153"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "preference-1-current",
+      "is_multi_memory": false,
+      "question": "What does user currently prefer for primary language?",
+      "redstone_context_tokens": 12,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_2382e8b0e618474b5b77"
+      ],
+      "retrieved_sources": [
+        "conversation-153"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 13,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_d4d010cc73e5eb095694"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-048"
+      ],
+      "baseline_context_tokens": 13,
+      "baseline_f1": 1.0,
+      "baseline_precision": 1.0,
+      "baseline_recall": 1.0,
+      "category": "historical_state",
+      "difficulty": "hard",
+      "expected_answer": "User originally preferred Java for primary language.",
+      "expected_memory_ids": [
+        "mem_d4d010cc73e5eb095694"
+      ],
+      "expected_project": "preferences",
+      "expected_sources": [
+        "conversation-048"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "preference-1-original",
+      "is_multi_memory": false,
+      "question": "What did user originally prefer for primary language?",
+      "redstone_context_tokens": 13,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_d4d010cc73e5eb095694"
+      ],
+      "retrieved_sources": [
+        "conversation-048"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 11,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_0e0059114455ee563702"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-155"
+      ],
+      "baseline_context_tokens": 11,
+      "baseline_f1": 1.0,
+      "baseline_precision": 1.0,
+      "baseline_recall": 1.0,
+      "category": "preference",
+      "difficulty": "hard",
+      "expected_answer": "User now prefers mornings for meeting time.",
+      "expected_memory_ids": [
+        "mem_0e0059114455ee563702"
+      ],
+      "expected_project": "preferences",
+      "expected_sources": [
+        "conversation-155"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "preference-2-current",
+      "is_multi_memory": false,
+      "question": "What does user currently prefer for meeting time?",
+      "redstone_context_tokens": 11,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_0e0059114455ee563702"
+      ],
+      "retrieved_sources": [
+        "conversation-155"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 14,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_9c971d079471e69c1e5a"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-054"
+      ],
+      "baseline_context_tokens": 14,
+      "baseline_f1": 1.0,
+      "baseline_precision": 1.0,
+      "baseline_recall": 1.0,
+      "category": "historical_state",
+      "difficulty": "hard",
+      "expected_answer": "User originally preferred afternoons for meeting time.",
+      "expected_memory_ids": [
+        "mem_9c971d079471e69c1e5a"
+      ],
+      "expected_project": "preferences",
+      "expected_sources": [
+        "conversation-054"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "preference-2-original",
+      "is_multi_memory": false,
+      "question": "What did user originally prefer for meeting time?",
+      "redstone_context_tokens": 14,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_9c971d079471e69c1e5a"
+      ],
+      "retrieved_sources": [
+        "conversation-054"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 13,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_d28abb5f39ac81e9a200"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-157"
+      ],
+      "baseline_context_tokens": 13,
+      "baseline_f1": 1.0,
+      "baseline_precision": 1.0,
+      "baseline_recall": 1.0,
+      "category": "preference",
+      "difficulty": "hard",
+      "expected_answer": "User now prefers failure summaries for test output.",
+      "expected_memory_ids": [
+        "mem_d28abb5f39ac81e9a200"
+      ],
+      "expected_project": "preferences",
+      "expected_sources": [
+        "conversation-157"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "preference-3-current",
+      "is_multi_memory": false,
+      "question": "What does user currently prefer for test output?",
+      "redstone_context_tokens": 13,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_d28abb5f39ac81e9a200"
+      ],
+      "retrieved_sources": [
+        "conversation-157"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 14,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_387b9d53bf8ed577f5c8"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-060"
+      ],
+      "baseline_context_tokens": 14,
+      "baseline_f1": 1.0,
+      "baseline_precision": 1.0,
+      "baseline_recall": 1.0,
+      "category": "historical_state",
+      "difficulty": "hard",
+      "expected_answer": "User originally preferred full traces for test output.",
+      "expected_memory_ids": [
+        "mem_387b9d53bf8ed577f5c8"
+      ],
+      "expected_project": "preferences",
+      "expected_sources": [
+        "conversation-060"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "preference-3-original",
+      "is_multi_memory": false,
+      "question": "What did user originally prefer for test output?",
+      "redstone_context_tokens": 14,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_387b9d53bf8ed577f5c8"
+      ],
+      "retrieved_sources": [
+        "conversation-060"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 10,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_82cbe39b3cc3cc64726d"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-159"
+      ],
+      "baseline_context_tokens": 10,
+      "baseline_f1": 1.0,
+      "baseline_precision": 1.0,
+      "baseline_recall": 1.0,
+      "category": "preference",
+      "difficulty": "hard",
+      "expected_answer": "User now prefers dark for editor theme.",
+      "expected_memory_ids": [
+        "mem_82cbe39b3cc3cc64726d"
+      ],
+      "expected_project": "preferences",
+      "expected_sources": [
+        "conversation-159"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "preference-4-current",
+      "is_multi_memory": false,
+      "question": "What does user currently prefer for editor theme?",
+      "redstone_context_tokens": 10,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_82cbe39b3cc3cc64726d"
+      ],
+      "retrieved_sources": [
+        "conversation-159"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 13,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_1db61bfbd33fb3985db8"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-066"
+      ],
+      "baseline_context_tokens": 13,
+      "baseline_f1": 1.0,
+      "baseline_precision": 1.0,
+      "baseline_recall": 1.0,
+      "category": "historical_state",
+      "difficulty": "hard",
+      "expected_answer": "User originally preferred light for editor theme.",
+      "expected_memory_ids": [
+        "mem_1db61bfbd33fb3985db8"
+      ],
+      "expected_project": "preferences",
+      "expected_sources": [
+        "conversation-066"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "preference-4-original",
+      "is_multi_memory": false,
+      "question": "What did user originally prefer for editor theme?",
+      "redstone_context_tokens": 13,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_1db61bfbd33fb3985db8"
+      ],
+      "retrieved_sources": [
+        "conversation-066"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 10,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_709a7f7a68cbd9bd952f"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-187"
+      ],
+      "baseline_context_tokens": 10,
+      "baseline_f1": 1.0,
+      "baseline_precision": 1.0,
+      "baseline_recall": 1.0,
+      "category": "preference",
+      "difficulty": "hard",
+      "expected_answer": "User now prefers uv for package manager.",
+      "expected_memory_ids": [
+        "mem_709a7f7a68cbd9bd952f"
+      ],
+      "expected_project": "preferences",
+      "expected_sources": [
+        "conversation-187"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "preference-5-current",
+      "is_multi_memory": false,
+      "question": "What does user currently prefer for package manager?",
+      "redstone_context_tokens": 10,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_709a7f7a68cbd9bd952f"
+      ],
+      "retrieved_sources": [
+        "conversation-187"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 13,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_a1f236a6cb7ca4db2d9c"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-072"
+      ],
+      "baseline_context_tokens": 13,
+      "baseline_f1": 1.0,
+      "baseline_precision": 1.0,
+      "baseline_recall": 1.0,
+      "category": "historical_state",
+      "difficulty": "hard",
+      "expected_answer": "User originally preferred pip for package manager.",
+      "expected_memory_ids": [
+        "mem_a1f236a6cb7ca4db2d9c"
+      ],
+      "expected_project": "preferences",
+      "expected_sources": [
+        "conversation-072"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "preference-5-original",
+      "is_multi_memory": false,
+      "question": "What did user originally prefer for package manager?",
+      "redstone_context_tokens": 13,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_a1f236a6cb7ca4db2d9c"
+      ],
+      "retrieved_sources": [
+        "conversation-072"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 12,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_ff83a2f49a570f0d779c"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-191"
+      ],
+      "baseline_context_tokens": 12,
+      "baseline_f1": 1.0,
+      "baseline_precision": 1.0,
+      "baseline_recall": 1.0,
+      "category": "preference",
+      "difficulty": "hard",
+      "expected_answer": "User now prefers 100 columns for line length.",
+      "expected_memory_ids": [
+        "mem_ff83a2f49a570f0d779c"
+      ],
+      "expected_project": "preferences",
+      "expected_sources": [
+        "conversation-191"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "preference-6-current",
+      "is_multi_memory": false,
+      "question": "What does user currently prefer for line length?",
+      "redstone_context_tokens": 12,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_ff83a2f49a570f0d779c"
+      ],
+      "retrieved_sources": [
+        "conversation-191"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 14,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_1b1c2abc64768646287c"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-078"
+      ],
+      "baseline_context_tokens": 14,
+      "baseline_f1": 1.0,
+      "baseline_precision": 1.0,
+      "baseline_recall": 1.0,
+      "category": "historical_state",
+      "difficulty": "hard",
+      "expected_answer": "User originally preferred 88 columns for line length.",
+      "expected_memory_ids": [
+        "mem_1b1c2abc64768646287c"
+      ],
+      "expected_project": "preferences",
+      "expected_sources": [
+        "conversation-078"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "preference-6-original",
+      "is_multi_memory": false,
+      "question": "What did user originally prefer for line length?",
+      "redstone_context_tokens": 14,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_1b1c2abc64768646287c"
+      ],
+      "retrieved_sources": [
+        "conversation-078"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 13,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_e979eb0f01da724ba2bd"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-195"
+      ],
+      "baseline_context_tokens": 14,
+      "baseline_f1": 0.0,
+      "baseline_precision": 0.0,
+      "baseline_recall": 0.0,
+      "category": "preference",
+      "difficulty": "hard",
+      "expected_answer": "User now prefers reference pages for documentation.",
+      "expected_memory_ids": [
+        "mem_e979eb0f01da724ba2bd"
+      ],
+      "expected_project": "preferences",
+      "expected_sources": [
+        "conversation-195"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "preference-7-current",
+      "is_multi_memory": false,
+      "question": "What does user currently prefer for documentation?",
+      "redstone_context_tokens": 13,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_e979eb0f01da724ba2bd"
+      ],
+      "retrieved_sources": [
+        "conversation-195"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 14,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_0784407b254f4b0d6d02"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-084"
+      ],
+      "baseline_context_tokens": 14,
+      "baseline_f1": 1.0,
+      "baseline_precision": 1.0,
+      "baseline_recall": 1.0,
+      "category": "historical_state",
+      "difficulty": "hard",
+      "expected_answer": "User originally preferred tutorials for documentation.",
+      "expected_memory_ids": [
+        "mem_0784407b254f4b0d6d02"
+      ],
+      "expected_project": "preferences",
+      "expected_sources": [
+        "conversation-084"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "preference-7-original",
+      "is_multi_memory": false,
+      "question": "What did user originally prefer for documentation?",
+      "redstone_context_tokens": 14,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_0784407b254f4b0d6d02"
+      ],
+      "retrieved_sources": [
+        "conversation-084"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 11,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_4d57d24727d8ae69e339"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-199"
+      ],
+      "baseline_context_tokens": 11,
+      "baseline_f1": 1.0,
+      "baseline_precision": 1.0,
+      "baseline_recall": 1.0,
+      "category": "preference",
+      "difficulty": "hard",
+      "expected_answer": "User now prefers weekly for release cadence.",
+      "expected_memory_ids": [
+        "mem_4d57d24727d8ae69e339"
+      ],
+      "expected_project": "preferences",
+      "expected_sources": [
+        "conversation-199"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "preference-8-current",
+      "is_multi_memory": false,
+      "question": "What does user currently prefer for release cadence?",
+      "redstone_context_tokens": 11,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_4d57d24727d8ae69e339"
+      ],
+      "retrieved_sources": [
+        "conversation-199"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 14,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_9018257339bfc73453b5"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-090"
+      ],
+      "baseline_context_tokens": 14,
+      "baseline_f1": 1.0,
+      "baseline_precision": 1.0,
+      "baseline_recall": 1.0,
+      "category": "historical_state",
+      "difficulty": "hard",
+      "expected_answer": "User originally preferred monthly for release cadence.",
+      "expected_memory_ids": [
+        "mem_9018257339bfc73453b5"
+      ],
+      "expected_project": "preferences",
+      "expected_sources": [
+        "conversation-090"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "preference-8-original",
+      "is_multi_memory": false,
+      "question": "What did user originally prefer for release cadence?",
+      "redstone_context_tokens": 14,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_9018257339bfc73453b5"
+      ],
+      "retrieved_sources": [
+        "conversation-090"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 12,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_a4a5515061fc2cd88995"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-203"
+      ],
+      "baseline_context_tokens": 12,
+      "baseline_f1": 1.0,
+      "baseline_precision": 1.0,
+      "baseline_recall": 1.0,
+      "category": "preference",
+      "difficulty": "hard",
+      "expected_answer": "User now prefers PowerShell for terminal shell.",
+      "expected_memory_ids": [
+        "mem_a4a5515061fc2cd88995"
+      ],
+      "expected_project": "preferences",
+      "expected_sources": [
+        "conversation-203"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "preference-9-current",
+      "is_multi_memory": false,
+      "question": "What does user currently prefer for terminal shell?",
+      "redstone_context_tokens": 12,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_a4a5515061fc2cd88995"
+      ],
+      "retrieved_sources": [
+        "conversation-203"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 13,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_ec7a5c573123be8f8e32"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-096"
+      ],
+      "baseline_context_tokens": 13,
+      "baseline_f1": 1.0,
+      "baseline_precision": 1.0,
+      "baseline_recall": 1.0,
+      "category": "historical_state",
+      "difficulty": "hard",
+      "expected_answer": "User originally preferred cmd for terminal shell.",
+      "expected_memory_ids": [
+        "mem_ec7a5c573123be8f8e32"
+      ],
+      "expected_project": "preferences",
+      "expected_sources": [
+        "conversation-096"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "preference-9-original",
+      "is_multi_memory": false,
+      "question": "What did user originally prefer for terminal shell?",
+      "redstone_context_tokens": 13,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_ec7a5c573123be8f8e32"
+      ],
+      "retrieved_sources": [
+        "conversation-096"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 46,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 3,
+      "adaptive_memory_ids": [
+        "mem_789c884cf937f049a0fb",
+        "mem_aa8abd8d0af9cc6694d2",
+        "mem_89ffe56d44b67e18d7f7"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-130",
+        "conversation-120",
+        "conversation-121"
+      ],
+      "baseline_context_tokens": 11,
+      "baseline_f1": 0.5,
+      "baseline_precision": 1.0,
+      "baseline_recall": 0.3333333333333333,
+      "category": "multi_hop",
+      "difficulty": "hard",
+      "expected_answer": "Atlas now uses MongoDB as primary database. | person-01 owns Atlas database migration approval. | Atlas database must work offline; this reliability constraint drives storage selection.",
+      "expected_memory_ids": [
+        "mem_789c884cf937f049a0fb",
+        "mem_89ffe56d44b67e18d7f7",
+        "mem_aa8abd8d0af9cc6694d2"
+      ],
+      "expected_project": "atlas",
+      "expected_sources": [
+        "conversation-130",
+        "conversation-120",
+        "conversation-121"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "atlas-multi-hop",
+      "is_multi_memory": true,
+      "question": "Which database does Atlas use now, who approved it, and what constraint caused it?",
+      "redstone_context_tokens": 11,
+      "redstone_f1": 0.5,
+      "redstone_precision": 1.0,
+      "redstone_recall": 0.3333333333333333,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_789c884cf937f049a0fb"
+      ],
+      "retrieved_sources": [
+        "conversation-130"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 13,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_b0ea366bb66d82fd5421"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-154"
+      ],
+      "baseline_context_tokens": 13,
+      "baseline_f1": 1.0,
+      "baseline_precision": 1.0,
+      "baseline_recall": 1.0,
+      "category": "distractor",
+      "difficulty": "hard",
+      "expected_answer": "Redstone now uses PostgreSQL as primary database.",
+      "expected_memory_ids": [
+        "mem_b0ea366bb66d82fd5421"
+      ],
+      "expected_project": "redstone",
+      "expected_sources": [
+        "conversation-154"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "redstone-distractor",
+      "is_multi_memory": false,
+      "question": "What is Redstone's current primary database despite unrelated database tutorials?",
+      "redstone_context_tokens": 13,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_b0ea366bb66d82fd5421"
+      ],
+      "retrieved_sources": [
+        "conversation-154"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 21,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_9606d43593f1cb452074"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-003"
+      ],
+      "baseline_context_tokens": 21,
+      "baseline_f1": 1.0,
+      "baseline_precision": 1.0,
+      "baseline_recall": 1.0,
+      "category": "long_term",
+      "difficulty": "hard",
+      "expected_answer": "Atlas originally chose PostgreSQL as primary database. Decision owner was person-01.",
+      "expected_memory_ids": [
+        "mem_9606d43593f1cb452074"
+      ],
+      "expected_project": "atlas",
+      "expected_sources": [
+        "conversation-003"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "atlas-long-range",
+      "is_multi_memory": false,
+      "question": "What primary database did Atlas originally choose?",
+      "redstone_context_tokens": 21,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_9606d43593f1cb452074"
+      ],
+      "retrieved_sources": [
+        "conversation-003"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 11,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_968e5c9b20fa8e203df9"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-138"
+      ],
+      "baseline_context_tokens": 11,
+      "baseline_f1": 1.0,
+      "baseline_precision": 1.0,
+      "baseline_recall": 1.0,
+      "category": "project",
+      "difficulty": "hard",
+      "expected_answer": "Nova now uses SQLite as primary database.",
+      "expected_memory_ids": [
+        "mem_968e5c9b20fa8e203df9"
+      ],
+      "expected_project": "nova",
+      "expected_sources": [
+        "conversation-138"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "nova-project",
+      "is_multi_memory": false,
+      "question": "What primary database does Nova use now?",
+      "redstone_context_tokens": 11,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_968e5c9b20fa8e203df9"
+      ],
+      "retrieved_sources": [
+        "conversation-138"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 20,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 2,
+      "adaptive_memory_ids": [
+        "mem_4a47dc77a42c2ce3fff2",
+        "mem_999d7448571c6ce22f3f"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-207",
+        "conversation-206"
+      ],
+      "baseline_context_tokens": 10,
+      "baseline_f1": 0.6666666666666666,
+      "baseline_precision": 1.0,
+      "baseline_recall": 0.5,
+      "category": "contradiction",
+      "difficulty": "hard",
+      "expected_answer": "Helix deployment region is Europe-West. | Helix deployment region is Asia-South.",
+      "expected_memory_ids": [
+        "mem_4a47dc77a42c2ce3fff2",
+        "mem_999d7448571c6ce22f3f"
+      ],
+      "expected_project": "helix",
+      "expected_sources": [
+        "conversation-206",
+        "conversation-207"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "helix-contradiction",
+      "is_multi_memory": true,
+      "question": "Which conflicting deployment regions were recorded for Helix?",
+      "redstone_context_tokens": 10,
+      "redstone_f1": 0.6666666666666666,
+      "redstone_precision": 1.0,
+      "redstone_recall": 0.5,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_4a47dc77a42c2ce3fff2"
+      ],
+      "retrieved_sources": [
+        "conversation-207"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 10,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_6ebb7e296de034499c5f"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-211"
+      ],
+      "baseline_context_tokens": 10,
+      "baseline_f1": 0.0,
+      "baseline_precision": 0.0,
+      "baseline_recall": 0.0,
+      "category": "redundancy",
+      "difficulty": "medium",
+      "expected_answer": "Redstone backup retention is 30 days.",
+      "expected_memory_ids": [
+        "mem_6ebb7e296de034499c5f"
+      ],
+      "expected_project": "redstone",
+      "expected_sources": [
+        "conversation-211"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "redstone-redundancy",
+      "is_multi_memory": false,
+      "question": "What is Redstone backup retention?",
+      "redstone_context_tokens": 10,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_6ebb7e296de034499c5f"
+      ],
+      "retrieved_sources": [
+        "conversation-211"
+      ]
+    },
+    {
+      "acceptable_answers": [],
+      "adaptive_context_tokens": 11,
+      "adaptive_f1": 1.0,
+      "adaptive_memories": 1,
+      "adaptive_memory_ids": [
+        "mem_44cd07fcaefa12b558c6"
+      ],
+      "adaptive_precision": 1.0,
+      "adaptive_recall": 1.0,
+      "adaptive_sources": [
+        "conversation-219"
+      ],
+      "baseline_context_tokens": 11,
+      "baseline_f1": 1.0,
+      "baseline_precision": 1.0,
+      "baseline_recall": 1.0,
+      "category": "short_term",
+      "difficulty": "easy",
+      "expected_answer": "Nova release captain this week is person-21.",
+      "expected_memory_ids": [
+        "mem_44cd07fcaefa12b558c6"
+      ],
+      "expected_project": "nova",
+      "expected_sources": [
+        "conversation-219"
+      ],
+      "expected_time": null,
+      "failure_category": null,
+      "id": "nova-short-term",
+      "is_multi_memory": false,
+      "question": "Who is Nova release captain this week?",
+      "redstone_context_tokens": 11,
+      "redstone_f1": 1.0,
+      "redstone_precision": 1.0,
+      "redstone_recall": 1.0,
+      "redundancy_rate": 0.0,
+      "required_facts": [],
+      "requirement_coverage": 1.0,
+      "requires_provenance": false,
+      "retrieved_memory_ids": [
+        "mem_44cd07fcaefa12b558c6"
+      ],
+      "retrieved_sources": [
+        "conversation-219"
+      ]
+    }
+  ],
+  "redstone": {
+    "context_tokens": 14.416666666666666,
+    "f1": 0.8842592592592592,
+    "latency_ms": 1.255655554511274,
+    "memory_efficiency": 0.05780346820809249,
+    "precision": 1.0,
+    "recall": 0.8333333333333334
+  },
+  "relative_improvement": 0.3636363636363636,
+  "retrieval_curves": {
+    "1": {
+      "context_tokens": 14.416666666666666,
+      "f1": 0.8842592592592592,
+      "precision": 1.0,
+      "recall": 0.8333333333333334
+    },
+    "10": {
+      "context_tokens": 107.59722222222223,
+      "f1": 0.38113876863876867,
+      "precision": 0.26450617283950617,
+      "recall": 0.9768518518518517
+    },
+    "2": {
+      "context_tokens": 29.680555555555557,
+      "f1": 0.6546296296296297,
+      "precision": 0.5486111111111112,
+      "recall": 0.8796296296296297
+    },
+    "3": {
+      "context_tokens": 41.125,
+      "f1": 0.6037037037037037,
+      "precision": 0.4583333333333333,
+      "recall": 0.9722222222222222
+    },
+    "5": {
+      "context_tokens": 62.19444444444444,
+      "f1": 0.4701719576719577,
+      "precision": 0.3277777777777778,
+      "recall": 0.9722222222222222
+    }
+  }
+}

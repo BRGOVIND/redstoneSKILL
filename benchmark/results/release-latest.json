@@ -1,0 +1,60 @@
+{
+  "date": "2026-09-15",
+  "release_verdict": "READY WITH WARNINGS",
+  "package": {
+    "name": "redstone-memory",
+    "version": "0.1.0",
+    "wheel": "dist/redstone_memory-0.1.0-py3-none-any.whl",
+    "sdist": "dist/redstone_memory-0.1.0.tar.gz",
+    "build": "PASS",
+    "twine_check": "PASS",
+    "fresh_install": "PASS",
+    "installed_version": "0.1.0",
+    "skill_assets_in_wheel": true
+  },
+  "quality": {
+    "pytest": {"status": "PASS", "passed": 61, "failed": 0},
+    "ruff": "PASS",
+    "compileall": "PASS",
+    "release_check": "PASS"
+  },
+  "installed_package": {
+    "cli_init": "PASS",
+    "doctor": "PASS",
+    "smoke_test": "PASS",
+    "mcp": "PASS",
+    "skill": "PASS",
+    "obsidian": "PASS",
+    "security": "PASS"
+  },
+  "ci": {
+    "workflow": ".github/workflows/ci.yml",
+    "yaml_parse": "PASS",
+    "remote_run": "NOT RUN",
+    "python_versions": ["3.11", "3.12", "3.13"]
+  },
+  "security_audit": {
+    "credential_value_shapes_found": 0,
+    "personal_user_paths_found": 0,
+    "email_addresses_found": 0,
+    "runtime_ignore_checks": "PASS"
+  },
+  "benchmark_regression": {
+    "phase9_adaptive_recall": 1.0,
+    "phase10_answer_accuracy": 1.0,
+    "phase11_answer_accuracy": 1.0,
+    "phase12_equal_budget_baseline_accuracy": 0.08333333333333333,
+    "phase12_equal_budget_redstone_accuracy": 0.8333333333333334,
+    "phase12_full_history_accuracy": 0.9166666666666666,
+    "phase13_semantic_default": "NO",
+    "phase14_integrity": "PASS",
+    "phase15_temporal_composition_accuracy": 1.0,
+    "phase16_integration": "PASS",
+    "phase17_live_claude": "NOT RUN"
+  },
+  "warnings": [
+    "Live Claude inference validation remains NOT RUN because external attempts failed before inference.",
+    "GitHub Actions configuration was validated locally but has not run on GitHub.",
+    "Redstone is currently an untracked directory inside an unrelated parent Git repository; Git ownership is left to the user."
+  ]
+}

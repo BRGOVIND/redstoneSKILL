@@ -1,0 +1,36 @@
+{
+  "mcp": {
+    "initialize": true,
+    "recall": true,
+    "store": true,
+    "tools": 9
+  },
+  "memory": {
+    "current": true,
+    "historical": true,
+    "provenance": true,
+    "timeline_entries": 2
+  },
+  "obsidian": {
+    "exported": 2,
+    "imported": 2,
+    "roundtrip": true
+  },
+  "offline": true,
+  "security": {
+    "secret_blocked": true,
+    "untrusted_context": true
+  },
+  "skill": {
+    "deterministic_package": true,
+    "valid": true
+  },
+  "timings": {
+    "initialization_ms": 6.3176000257954,
+    "mcp_request_ms": 0.014199991710484028,
+    "memory_write_ms": 8.359600033145398,
+    "obsidian_sync_ms": 45.25130003457889,
+    "recall_ms": 8.73840000713244,
+    "temporal_composition_ms": 1.676499960012734
+  }
+}

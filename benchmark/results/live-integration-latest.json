@@ -1,0 +1,47 @@
+{
+  "date": "2026-09-14",
+  "redstone_version": "0.1.0",
+  "claude_client": "Claude Code 2.1.260",
+  "claude_live_status": "NOT RUN",
+  "claude_live_reason": "Two authenticated client attempts ended before inference: HTTP 429 session limit, then API DNS ENOTFOUND",
+  "package": {
+    "wheel_built": true,
+    "sdist_built": true,
+    "clean_install": true,
+    "wheel_sha256": "24349E07A3B28017A114B81D79F6FBAB685B15C926F82FE68A9EEEC43EA75E8C"
+  },
+  "skill": {
+    "packaged_artifact_used": true,
+    "valid": true,
+    "deterministic": true,
+    "sha256": "D626F26FF37407D2203F2994A199684927A569BC7C5F0100C98C7B0D65D17A27",
+    "live_load": false
+  },
+  "automated": {
+    "mcp_initialize": true,
+    "mcp_tools_list": true,
+    "mcp_store": true,
+    "cross_process_recall": true,
+    "supersession": true,
+    "current_state": true,
+    "historical_state": true,
+    "provenance": true,
+    "unsupported_fact_absent": true,
+    "adversarial_memory_untrusted": true,
+    "adversarial_no_deletion": true,
+    "obsidian_export": true,
+    "obsidian_sync": true,
+    "obsidian_reimport": true,
+    "obsidian_duplicates": 0
+  },
+  "live_scenarios": {
+    "store_memory": "NOT RUN",
+    "cross_session_recall": "NOT RUN",
+    "current_state": "NOT RUN",
+    "historical_state": "NOT RUN",
+    "provenance": "NOT RUN",
+    "unsupported_question": "NOT RUN",
+    "adversarial_memory": "NOT RUN",
+    "obsidian_round_trip": "NOT RUN"
+  }
+}
